@@ -1,0 +1,72 @@
+/* HeroSlider.css */
+
+.slider-item {
+    position: relative;
+    height: 75vh;
+  }
+  
+  .slider-item.slide1 {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.63)), url('../../assets/img/backgroud.jpg');
+  }
+  
+  .slider-item.slide2 {
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.63)),  url('../../assets/img/hpage.jpg');
+   
+  }
+  
+  .slider-item.slide3 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.651),rgba(0, 0, 0, 0.63)), url('../../assets/img/bgpic.jpg');
+    
+}
+  
+  .slider-item {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .slider-content {
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+  
+  .slider-text {
+      animation: slide-up 2s ease-in-out forwards;
+      margin-bottom: 10px;
+  }
+  .slider-para{
+    animation: slide-up 2.5s ease-in-out forwards;
+    margin-bottom: 10px;
+  }
+  .slider-btn{
+    animation: slide-up 3s ease-in-out forwards;
+  }
+
+  .animated-text {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .slide-up-animation .animated-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+.btn{
+   background-color: rgb(1, 1, 26) !important; 
+}
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
