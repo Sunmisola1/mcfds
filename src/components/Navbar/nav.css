@@ -4,6 +4,9 @@
 .toggle{
     color: rgb(1, 1, 26) !important; 
 }
-.btn{
-   background-color: rgb(1, 1, 26) !important; 
-}
+.btns{
+   background-color: #528fc1 !important; 
+} 
+.btns:hover{
+    color: #000000 !important; 
+ } 

@@ -6,8 +6,24 @@
     background-position: center;
     background-size: cover;
   }
+  .head-text{
+    color:#A38636;
+  }
+  .para-text{
+    color:white; 
+  }
+
+  .icon-color{
+    background-color:#528fc1 ;
+  }
+  .banner-color{
+    background-color: #304B5F !important; 
+  }
   /* teacher sectio */
 
+  /* progress bar */
+  /* .btns{
+    background-color: #A38636 !important; } */
   /* styles.css */
 
 .teacher-card {

@@ -8,17 +8,17 @@ import firstpic from '../../assets/img/logo.jpg';
 
 export const Header = () => {
   return (
-    <Navbar fluid rounded className=" px-4 py-4 text-black md:px-8 navbar-bg ">
+    <Navbar fluid rounded className=" px-4 py-4 text-black md:px-8  ">
         <Navbar.Brand href="https://flowbite-react.com">
       <img src={ firstpic }  className="w-12 h-12 mr-2" alt="MCFDS LOGO" />
      </Navbar.Brand>
     <div className="flex md:order-2">
-      <Button className='hidden btn md:block  hover:bg-blue-600 text-white font-semibold text-2xl rounded-lg'>Get started</Button>
+      <Button className='hidden btns md:block  text-white font-semibold text-2xl rounded-lg'>Get started</Button>
       <Navbar.Toggle />
     </div>
     {/* Link */}
     <Navbar.Collapse  className="  md:space-y-0  md:flex md:justify-between md:align-center  space-x-4 ">
-      <Navbar.Link href="#"><Link to="/ " className=" toggle font-bold text-center text-lg flex align-center justify-center hover:text-gray-300 md:pr-7">
+      <Navbar.Link href="#"><Link to="/ " className=" toggle font-bold text-center text-lg flex align-cennter justify-center hover:text-gray-300 md:pr-7">
          Home</Link>
       </Navbar.Link>
 
@@ -26,7 +26,7 @@ export const Header = () => {
       
       <div className="toggle font-bold mt-5 md:mt-0 md:pr-2 mb-3 md:mb-0 text-lg hover:text-gray-300 flex align-center justify-center "><Dropdown label="About Us" inline >
       <Dropdown.Item><Navbar.Link href="#"><Link to="/OurHistory" className='toggle font-bold  pr-10 text-lg hover:text-gray-300 '>Our History</Link></Navbar.Link></Dropdown.Item>
-      <Dropdown.Item><Navbar.Link href="#"><Link to="/Nursery" className="toggle font-bold  pr-10 text-lg hover:text-gray-300 ">Our Teachers</Link></Navbar.Link></Dropdown.Item>
+      <Dropdown.Item><Navbar.Link href="#"><Link to="/Management" className="toggle font-bold  pr-10 text-lg hover:text-gray-300 ">Our Management</Link></Navbar.Link></Dropdown.Item>
           </Dropdown>
       
       </div>
@@ -41,9 +41,9 @@ export const Header = () => {
     </div>
 
     {/* others */}
-      <Navbar.Link href="#" className="toggle font-bold  mt-3 md:mt-0 pr-7 text-lg hover:text-gray-300 flex align-center justify-center ">Services</Navbar.Link>
-      <Navbar.Link href="#" className="toggle font-bold mb-3 md:mb-0 mt-3 md:mt-0 pr-7 text-lg hover:text-gray-300 flex align-center justify-center">Contact</Navbar.Link>
-      <Button className='btn md:hidden hover:bg-blue-600 text-white font-semibold text-2xl rounded-lg'>Get started</Button>
+      <Navbar.Link href="#" ><Link to="/Services" className="toggle font-bold  mt-3 md:mt-0 pr-7 text-lg hover:text-gray-300 flex align-center justify-center ">Services</Link></Navbar.Link>
+      <Navbar.Link href="#"> <Link to="/Contact" className="toggle font-bold mb-3 md:mb-0 mt-3 md:mt-0 pr-7 text-lg hover:text-gray-300 flex align-center justify-center">Contact</Link></Navbar.Link>
+      <Button className=' btns md:hidden hover:bg-blue-600 text-white font-semibold text-2xl rounded-lg'>Get started</Button>
 
     </Navbar.Collapse>
   </Navbar>

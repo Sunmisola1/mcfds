@@ -46,7 +46,7 @@ const AboutsUsSection = () => {
           <p className="text-black text-sm leading-relaxed block ">
             Come with us, we also teach children about the basic values of human beings as honesty, kindness, generosity, courage, freedom, equality, and respect. Learn to celebrate diversity in a spirit of understanding and tolerance and develop a positive regard and awareness of other people. They are taught the values and responsibilities needed to become active members of the community, something which the modern world is desperate for.
           </p>
-  {/* icon */}
+  {/*play icon */}
   <section className="bg-white py-2">
      
      <div className="   grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4   lg:flex lg:flex-row  space-y-2 md:space-x-4">
@@ -84,6 +84,7 @@ const AboutsUsSection = () => {
      </div>
 
  </section>
+ 
  <div className="flex flex-col gap-2  ml-1 mt-3">
     <div className="toy mb-6">
       <div className="text-sm font-medium dark:text-white flex justify-between">
@@ -147,8 +148,8 @@ const BannerSection = () => {
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {counters.map((counter) => (
           <div key={counter.id} className="  border-none md:border-r border-gray-300 p-4 text-center ">
-            <h3 className="text-5xl text-white  font-semibold mb-2">{counter.start}</h3>
-            <p className="text-yellow-300 text-lg">{counter.text}</p>
+            <h3 className="text-5xl head-text  font-semibold mb-2">{counter.start}</h3>
+            <p className="para-text text-lg">{counter.text}</p>
           </div>
         ))}
       </div>
@@ -182,7 +183,7 @@ const OurServicesSection = () => {
                 <p className="text-md font-semibold text-right">Meals Provided</p>
                 <p className=' text-right'>Enjoy nutritious and delicious meals every day.</p>
               </div>
-              <FontAwesomeIcon icon={faUtensils} className="text-white text-2xl mr-2 ml-6 bg-yellow-300 p-10 rounded-full" />
+              <FontAwesomeIcon icon={faUtensils} className="text-white text-2xl mr-2 ml-6 icon-color p-10 rounded-full" />
             </div>
 
             <div className="flex items-center md:mb-24 mb-7">
@@ -191,7 +192,7 @@ const OurServicesSection = () => {
                 <p>Learn new languages with our interactive lessons.</p>
               </div>
               
-              <FontAwesomeIcon icon={faLanguage} className="text-white text-2xl mr-2 ml-6 bg-yellow-300 p-10 rounded-full" />
+              <FontAwesomeIcon icon={faLanguage} className="text-white text-2xl mr-2 ml-6 icon-color p-10 rounded-full" />
             </div>
 
             <div className="flex items-center md:-mb-12">
@@ -200,7 +201,7 @@ const OurServicesSection = () => {
                 <p className="text-md font-semibold">Transportation</p>
                 <p>Reliable transportation services for your convenience.</p>
               </div>
-              <FontAwesomeIcon icon={faBus} className="text-white text-2xl mr-2 ml-6 bg-yellow-300 p-10 rounded-full" />
+              <FontAwesomeIcon icon={faBus} className="text-white text-2xl mr-2 ml-6 icon-color p-10 rounded-full" />
             </div>
           </div>
 
@@ -216,7 +217,7 @@ const OurServicesSection = () => {
           {/* Part 3: Text */}
           <div className="md:w-1/3">
             <div className="flex items-center mt-4 md:mb-24 md:-mt-20 mb-7">
-              <FontAwesomeIcon icon={faClock} className="text-white text-2xl mr-6 ml-2  bg-yellow-300 p-10 rounded-full" />
+              <FontAwesomeIcon icon={faClock} className="text-white text-2xl mr-6 ml-2  icon-color p-10 rounded-full" />
               <div className=' text-left'>
                 <p className="text-md font-semibold">Full Day Session</p>
                 <p>Extended hours to accommodate your busy schedule.</p>
@@ -224,7 +225,7 @@ const OurServicesSection = () => {
             </div>
 
             <div className="flex items-center md:mb-24 mb-7">
-              <FontAwesomeIcon icon={faGraduationCap} className="text-white text-2xl mr-6 ml-2 bg-yellow-300 p-10 rounded-full" />
+              <FontAwesomeIcon icon={faGraduationCap} className="text-white text-2xl mr-6 ml-2 icon-color p-10 rounded-full" />
               <div className=' text-left'>
                 <p className="text-md font-semibold">Special Education</p>
                 <p>Individualized education for every childs unique needs.</p>
@@ -232,7 +233,7 @@ const OurServicesSection = () => {
             </div>
 
             <div className="flex items-center  md:-mb-12">
-              <FontAwesomeIcon icon={faHandsHelping} className="text-white text-2xl mr-6 ml-2 bg-yellow-300 p-10 rounded-full" />
+              <FontAwesomeIcon icon={faHandsHelping} className="text-white text-2xl mr-6 ml-2 icon-color p-10 rounded-full" />
               <div className=' text-left'>
                 <p className="text-md font-semibold">Special Education</p>
                 <p>Supportive programs for children with special needs.</p>
@@ -347,7 +348,7 @@ const OurClassesSection = () => {
 // CTASection.jsx
 const CTASection = () => {
   return (
-    <section className="bg-gray-900 text-white py-12">
+    <section className=" banner-color text-white py-12">
     <div className="container mx-auto px-4">
       <div className="text-center">
         <h2 className="text-3xl font-bold mb-4">Join Us Today</h2>

@@ -9,6 +9,9 @@ import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 import Pricing from './pages/Pricing/Pricing';
 import Contact from './pages/Contact/Contact';
 import Services from './pages/Services/Services';
+import Management from './pages/About/Management/Management';
+// import Navbar from './components/Navbar/eader';
+
 
 
 function App() {
@@ -18,12 +21,14 @@ function App() {
       <div>
       <Minibar/>
       <Header/> 
+      {/* <Navbar/> */}
        {/* <Nav/>  */}
      
       <Routes>
         <Route path="/" element={<Home />}/>
         {/* <Route path="/About" element={<About />}/> */}
         <Route path="/OurHistory" element={<OurHistory/>}/>
+        <Route path="/Management" element={<Management/>}/>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/Pricing" element={<Pricing />}/>
         <Route path="/Services" element={<Services />}/>

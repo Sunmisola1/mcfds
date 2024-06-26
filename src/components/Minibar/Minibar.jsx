@@ -6,7 +6,7 @@ import './Minibar.css'
 
 export const Minibar = () => {
   return (
-    <div className="bg-mini text-yellow-200  md:p-2 flex justify-center items-center md:justify-between md:items-center">
+    <div className="bg-mini text-gray-200  md:p-2 flex justify-center items-center md:justify-between md:items-center">
       <div className='ml-1 md:ml-8'>
       <a href="#" target="_blank" rel="noopener noreferrer" className='mr-1 '>
           <FontAwesomeIcon icon={faFacebook} />

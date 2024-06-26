@@ -16,15 +16,15 @@ export default function FooterBg() {
             alt="MCFDS LOGO"
          
           />
-          <Footer.LinkGroup>
+          <Footer.LinkGroup  className='foot-link'>
             <Footer.Link href="#">About</Footer.Link>
             <Footer.Link href="#">Privacy Policy</Footer.Link>
             <Footer.Link href="#">Licensing</Footer.Link>
             <Footer.Link href="#">Contact</Footer.Link>
           </Footer.LinkGroup>
         </div>
-        <Footer.Divider />
-        <Footer.Copyright href="MCFDS" by="MCFDS™" year={2022} />
+        <Footer.Divider/>
+        <Footer.Copyright  className='foot-link'  href="MCFDS" by="MCFDS™" year={2022} />
       </div>
     </Footer>
     

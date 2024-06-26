@@ -56,7 +56,7 @@ export const Nav = () => {
               <div className="absolute z-10 bg-gray-800 text-white mt-0 py-2 rounded-lg shadow-md">
                 <Link to ="/Creche" className="block px-4 py-4 hover:bg-gray-700">Management</Link>
                 <Link to ="/Nursery" className="block px-4 py-4 hover:bg-gray-700">Our History</Link>
-                <Link to ="#" className="block px-4 py-4 hover:bg-gray-700">Our teachers</Link>
+                <Link to ="/Management" className="block px-4 py-4 hover:bg-gray-700">Our Management</Link>
               </div>
             )}
           </div>
@@ -77,8 +77,10 @@ export const Nav = () => {
               </div>
             )}
           </div>
-          <a className="toggle font-bold  pr-10 text-lg hover:text-gray-300 ">Services</a>
-          <a className="toggle font-bold  pr-10 text-lg hover:text-gray-300 ">Contact</a>
+          <Link to = "/Services" className="toggle font-bold pr-10   text-lg hover:text-gray-300">Services</Link>
+          <Link to = "/Contact" className="toggle font-bold pr-10   text-lg hover:text-gray-300">Contact</Link>
+
+       
           
         </div>
 
