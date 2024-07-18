@@ -3,15 +3,16 @@ import { Footer } from 'flowbite-react';
     'use client';
     import firstpic from '../../assets/img/logo.jpg';
     import './footer.css'
+    
 
 export default function FooterBg() {
   return (
     <div>
-     <Footer container className="foot">
-      <div className="w-full text-center blue-900">
+     <Footer container className="foot rounded-none">
+      <div className="w-full text-center blue-900 ">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
           <Footer.Brand
-            href="https://flowbite.com"
+            href="/"
             src={ firstpic }
             alt="MCFDS LOGO"
          
@@ -24,7 +25,7 @@ export default function FooterBg() {
           </Footer.LinkGroup>
         </div>
         <Footer.Divider/>
-        <Footer.Copyright  className='foot-link'  href="MCFDS" by="MCFDS™" year={2022} />
+        <Footer.Copyright  className='foot-link'  href="MCFDS" by="MCFDS™" year={2024} />
       </div>
     </Footer>
     

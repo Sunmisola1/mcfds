@@ -7,7 +7,6 @@ import Grad from '../../assets/img/8.jpg'
 import { Progress } from 'flowbite-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Backpic from '../../assets/img/hpage.jpg';
-import bammer from '../../assets/img/bammer.jpg';
 import classpic from '../../assets/img/children-602967_1920.jpg';
 import firstpic from '../../assets/img/12.jpg';
 import classpics from '../../assets/img/boy-330582_1920.jpg'
@@ -273,30 +272,7 @@ const OurClassesSection = () => {
       age: '9-12 years',
       classSize: '18 students',
     },
-    {
-      id: 4,
-      image: classpics,  // Replace with the actual image URL
-      heading: 'Class 3',
-      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      age: '9-12 years',
-      classSize: '18 students',
-    },
-    {
-      id: 5,
-      image: classpics,  // Replace with the actual image URL
-      heading: 'Class 3',
-      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      age: '9-12 years',
-      classSize: '18 students',
-    },
-    {
-      id: 6,
-      image: bammer,  // Replace with the actual image URL
-      heading: 'Class 3',
-      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      age: '9-12 years',
-      classSize: '18 students',
-    },
+    
   ];
   
   return (
@@ -428,7 +404,6 @@ const TeacherSlider = () => {
 
 // GallerySection.jsx
 const GallerySection = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
 
   // Placeholder data for gallery images
   const galleryData = [
@@ -436,15 +411,10 @@ const GallerySection = () => {
     { id: 2, category: 'Excursions', image: gallerypics},
     { id: 3, category: 'Courses', image: gallery },
     { id: 4, category: 'Playtime', image: gallerypics },
-    { id: 6, category: 'Excursions', image: gallerypic },
-    { id: 7, category: 'Courses', image: gallerypics },
-    { id: 8, category: 'Playtime', image: gallery },
-    { id: 9, category: 'Courses', image: gallerypics },
+  
     // Add more images with different categories
   ];
 
-  // Filter gallery images based on the selected category
-  const filteredImages = selectedCategory === 'All' ? galleryData : galleryData.filter(item => item.category === selectedCategory);
 
   return (
     <section className="bg-gray-100 py-16">
@@ -457,23 +427,11 @@ const GallerySection = () => {
         </div>
 
         {/* Mini Navbar */}
-        <div className="mb-6 flex justify-center">
-          <ul className="flex">
-            {['All', 'Drawing', 'Excursions', 'Courses', 'Playtime'].map(category => (
-              <li
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`cursor-pointer py-2 px-4 mx-2 border-b-2 transition-colors ${selectedCategory === category ? 'border-blue-500 bg-blue-100' : 'border-gray-300 hover:bg-gray-100'}`}
-              >
-                {category}
-              </li>
-            ))}
-          </ul>
-        </div>
+    
 
         {/* Gallery Images */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {filteredImages.map(image => (
+          {galleryData.map(image => (
             <div key={image.id}>
               <img src={image.image} alt={image.category} className="w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover rounded-md shadow-md" />
             </div>

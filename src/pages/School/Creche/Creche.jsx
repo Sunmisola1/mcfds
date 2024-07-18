@@ -1,51 +1,48 @@
 
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChalkboardTeacher, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faBaby} from '@fortawesome/free-solid-svg-icons';
 
 // Placeholder images (replace with actual image URLs)
-import class1Image from '../../../assets/img/10.jpg';
-import class2Image from '../../../assets/img/10.jpg';
-import class3Image from '../../../assets/img/10.jpg';
+import creche1Image from '../../../assets/img/10.jpg';
+import creche2Image from '../../../assets/img/10.jpg';
+import creche3Image from '../../../assets/img/10.jpg';
 import teacher1Image from '../../../assets/img/10.jpg';
 import teacher2Image from '../../../assets/img/10.jpg';
 import teacher3Image from '../../../assets/img/10.jpg';
 
-const SecondaryPage = () => {
-  // Sample data for secondary classes and teachers
+const CrechePage = () => {
+  // Sample data for creche classes and teachers
   const classes = [
     {
       id: 1,
-      name: 'Class 1',
-      image: class1Image,
+      name: 'Creche A',
+      image: creche1Image,
       teacher: {
-        name: 'Mr. John Doe',
-        description: 'Experienced in secondary education.',
+        name: 'Miss Jane Doe',
+        description: 'Experienced in early childhood education.',
         image: teacher1Image
-      },
-      capacity: 25
+      }
     },
     {
       id: 2,
-      name: 'Class 2',
-      image: class2Image,
+      name: 'Creche B',
+      image: creche2Image,
       teacher: {
-        name: 'Mrs. Jane Smith',
-        description: 'Passionate about student success.',
+        name: 'Mr. John Smith',
+        description: 'Passionate about fostering creativity in children.',
         image: teacher2Image
-      },
-      capacity: 28
+      }
     },
     {
       id: 3,
-      name: 'Class 3',
-      image: class3Image,
+      name: 'Creche C',
+      image: creche3Image,
       teacher: {
-        name: 'Mr. Alex Brown',
-        description: 'Specializes in subject mastery.',
+        name: 'Mrs. Mary Brown',
+        description: 'Specializes in child development and care.',
         image: teacher3Image
-      },
-      capacity: 30
+      }
     }
   ];
 
@@ -60,7 +57,7 @@ const SecondaryPage = () => {
             transition={{ duration: 1 }}
             className="text-4xl font-bold mb-4"
           >
-            Welcome to Our Secondary Classes
+            Welcome to Our Creche
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -68,14 +65,14 @@ const SecondaryPage = () => {
             transition={{ duration: 1 }}
             className="text-lg mb-8"
           >
-            Explore our engaging secondary education classes and dedicated teachers.
+            Explore our nurturing creche classes and dedicated teachers.
           </motion.p>
         </div>
       </div>
 
       {/* Classes Section */}
       <section className="container mx-auto py-12">
-        <h2 className="text-3xl font-bold mb-8 text-center">Our Secondary Classes</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Our Creche Classes</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {classes.map((cls) => (
             <motion.div
@@ -97,7 +94,7 @@ const SecondaryPage = () => {
                   transition={{ duration: 0.3 }}
                   className="flex items-center justify-center bg-blue-500 rounded-full p-3 w-16 h-16 mx-auto mb-4 transform transition duration-300"
                 >
-                  <FontAwesomeIcon icon={faChalkboardTeacher} className="text-white text-3xl" />
+                  <FontAwesomeIcon icon={faBaby} className="text-white text-3xl" />
                 </motion.div>
                 <h3 className="text-lg font-semibold mb-2 text-center">{cls.name}</h3>
                 <motion.img
@@ -112,12 +109,6 @@ const SecondaryPage = () => {
                   <p className="font-semibold">{cls.teacher.name}</p>
                   <p className="text-sm text-gray-600">Class Teacher</p>
                 </div>
-                <div className="mt-4 text-center">
-                  <p className="text-gray-600">
-                    <FontAwesomeIcon icon={faUsers} className="mr-2" />
-                    Capacity: {cls.capacity} students
-                  </p>
-                </div>
               </div>
             </motion.div>
           ))}
@@ -127,4 +118,4 @@ const SecondaryPage = () => {
   );
 };
 
-export default SecondaryPage;
+export default CrechePage;
