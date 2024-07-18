@@ -34,12 +34,12 @@ function App() {
   return (      
       <Router>
       <div>
-      {location.pathname === '/admin/*' && <Minibar/>}
-       {location.pathname === '/admin/*' && <Header/> }
+      {location.pathname !== '/admin/*' && <Minibar/>}
+       {location.pathname !== '/admin/*' && <Header/> }
       
       <Routes>
         <Route path="/" element={<Home />}/>
-       <Route path="/admin/*" element={<AdminApp/>} />  
+        <Route path="/admin/*" element={<AdminApp />} />
        {/* <Route path="/admin/home" element={<Homes/>} />  */}
         <Route path="/RegistrationForm" element={<RegistrationForm/>}/>
         {/* <Route path="/About" element={<About />}/> */}
@@ -64,7 +64,7 @@ function App() {
 
       </Routes>
       </div>
-      {location.pathname === '/admin/*' && <FooterBg />}
+      {location.pathname !== '/admin' && <FooterBg />}
       
     </Router>
     

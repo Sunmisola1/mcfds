@@ -1,7 +1,7 @@
 
-export default function Homes() {
+export default function Home() {
   return (
-    <div className="bg-black  m-36">HomeHomeHomeHomeHomeHomeHom
+    <div className="bg-black">HomeHomeHomeHomeHomeHomeHom
 HomeHomeHomeHomeHomeHomeHomHomeHomeHomeHomeHomeHomeHomHomeHomeHomeHomeHomeHomeHomHomeHomeHomeHomeHomeHomeHom
 HomeHomeHomeHomeHomeHHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHom
 HomeHomeHomeHomeHomeHomeHomHomeHomeHomeHomeHomeHomeHomHomeHomeHomeHomeHomeHomeHomHomeHomeHomeHomeHomeHomeHom
